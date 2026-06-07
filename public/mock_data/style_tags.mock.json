@@ -1,0 +1,91 @@
+{
+  "categories": [
+    {
+      "id": "short",
+      "name": "短发造型",
+      "sort_order": 1,
+      "tags": [
+        { "id": "tag_s1", "name": "日系短发", "hot": true },
+        { "id": "tag_s2", "name": "层次感短发", "hot": true },
+        { "id": "tag_s3", "name": "一刀切", "hot": false },
+        { "id": "tag_s4", "name": "狼尾/鲻鱼头", "hot": false },
+        { "id": "tag_s5", "name": "凯撒头", "hot": false },
+        { "id": "tag_s6", "name": "平头/寸头", "hot": false },
+        { "id": "tag_s7", "name": "美式前刺", "hot": true },
+        { "id": "tag_s8", "name": "侧分短发", "hot": false },
+        { "id": "tag_s9", "name": "女生日常短发", "hot": false },
+        { "id": "tag_s10", "name": "商务短发", "hot": false },
+        { "id": "tag_s11", "name": "学生发型", "hot": false },
+        { "id": "tag_s12", "name": "碎盖", "hot": true }
+      ]
+    },
+    {
+      "id": "medium",
+      "name": "中长发",
+      "sort_order": 2,
+      "tags": [
+        { "id": "tag_m1", "name": "锁骨发", "hot": true },
+        { "id": "tag_m2", "name": "法式慵懒卷", "hot": true },
+        { "id": "tag_m3", "name": "空气刘海", "hot": true },
+        { "id": "tag_m4", "name": "八字刘海", "hot": false },
+        { "id": "tag_m5", "name": "公主切", "hot": false },
+        { "id": "tag_m6", "name": "水母头", "hot": false }
+      ]
+    },
+    {
+      "id": "long",
+      "name": "长发造型",
+      "sort_order": 3,
+      "tags": [
+        { "id": "tag_l1", "name": "黑长直", "hot": false },
+        { "id": "tag_l2", "name": "法式烫", "hot": true },
+        { "id": "tag_l3", "name": "羊毛卷", "hot": false },
+        { "id": "tag_l4", "name": "大波浪", "hot": true },
+        { "id": "tag_l5", "name": "韩式大卷", "hot": false }
+      ]
+    },
+    {
+      "id": "color_perm",
+      "name": "烫染潮色",
+      "sort_order": 4,
+      "tags": [
+        { "id": "tag_cp1", "name": "挂耳染", "hot": true },
+        { "id": "tag_cp2", "name": "挑染", "hot": false },
+        { "id": "tag_cp3", "name": "潮色", "hot": true },
+        { "id": "tag_cp4", "name": "全头漂", "hot": false },
+        { "id": "tag_cp5", "name": "巴黎画染", "hot": true },
+        { "id": "tag_cp6", "name": "韩式烫染", "hot": false },
+        { "id": "tag_cp7", "name": "气垫烫", "hot": false },
+        { "id": "tag_cp8", "name": "摩根烫", "hot": false },
+        { "id": "tag_cp9", "name": "雾霾蓝", "hot": false },
+        { "id": "tag_cp10", "name": "奶茶棕", "hot": true },
+        { "id": "tag_cp11", "name": "粉棕", "hot": false }
+      ]
+    },
+    {
+      "id": "barber",
+      "name": "男士 Barber",
+      "sort_order": 5,
+      "tags": [
+        { "id": "tag_b1", "name": "美式渐变", "hot": true },
+        { "id": "tag_b2", "name": "复古油头", "hot": true },
+        { "id": "tag_b3", "name": "雕刻", "hot": false },
+        { "id": "tag_b4", "name": "修面", "hot": false },
+        { "id": "tag_b5", "name": "黑人烫", "hot": true },
+        { "id": "tag_b6", "name": "脏辫", "hot": false },
+        { "id": "tag_b7", "name": "圆寸", "hot": false }
+      ]
+    },
+    {
+      "id": "other",
+      "name": "其他服务",
+      "sort_order": 6,
+      "tags": [
+        { "id": "tag_o1", "name": "快剪", "hot": false },
+        { "id": "tag_o2", "name": "修型", "hot": false },
+        { "id": "tag_o3", "name": "护发", "hot": false },
+        { "id": "tag_o4", "name": "儿童发型", "hot": false }
+      ]
+    }
+  ]
+}

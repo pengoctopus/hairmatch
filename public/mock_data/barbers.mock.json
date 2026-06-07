@@ -1,0 +1,124 @@
+{
+  "barbers": [
+    {
+      "id": 1,
+      "name": "托尼老师",
+      "shop": "潮流造型工作室",
+      "location": "朝阳区三里屯",
+      "distance": "1.2km",
+      "rating": 4.8,
+      "tags": ["日系短发", "层次感", "细软发质"],
+      "specialties": ["圆", "细软", "高层次", "韩式温柔"],
+      "avatar": "barber_1.png",
+      "price_range": "¥128-298"
+    },
+    {
+      "id": 2,
+      "name": "阿杰",
+      "shop": "空",
+      "location": "海淀区五道口",
+      "distance": "2.5km",
+      "rating": 4.9,
+      "tags": ["女生日常", "黑长直", "儿童发型"],
+      "specialties": ["方", "粗硬", "学生头", "美式复古"],
+      "avatar": "barber_2.png",
+      "price_range": "¥168-388"
+    },
+    {
+      "id": 3,
+      "name": "Lisa老师",
+      "shop": "轻奢美发沙龙",
+      "location": "西城区金融街",
+      "distance": "3.0km",
+      "rating": 4.7,
+      "tags": ["韩式烫染", "空气刘海", "染发"],
+      "specialties": ["椭", "细软", "卷发", "韩式温柔"],
+      "avatar": "barber_3.png",
+      "price_range": "¥198-588"
+    },
+    {
+      "id": 4,
+      "name": "老K",
+      "shop": "复古理发馆",
+      "location": "东城区南锣鼓巷",
+      "distance": "0.8km",
+      "rating": 4.9,
+      "tags": ["复古油头", "雕刻"],
+      "specialties": ["长", "粗硬", "学生头", "美式复古"],
+      "avatar": "barber_4.png",
+      "price_range": "¥88-228"
+    },
+    {
+      "id": 5,
+      "name": "Cindy",
+      "shop": "艺剪钟情",
+      "location": "朝阳区国贸",
+      "distance": "4.1km",
+      "rating": 4.6,
+      "tags": ["女士长发", "大波浪", "护发"],
+      "specialties": ["圆", "细软", "公主切", "法式慵懒"],
+      "avatar": "barber_5.png",
+      "price_range": "¥158-458"
+    },
+    {
+      "id": 6,
+      "name": "大明",
+      "shop": "街头理发店",
+      "location": "丰台区方庄",
+      "distance": "5.0km",
+      "rating": 4.5,
+      "tags": ["学生发型"],
+      "specialties": ["方", "粗硬", "学生头", "韩式温柔"],
+      "avatar": "barber_6.png",
+      "price_range": "¥30-68"
+    },
+    {
+      "id": 7,
+      "name": "小雨",
+      "shop": "创意美发工坊",
+      "location": "朝阳区望京",
+      "distance": "3.8km",
+      "rating": 4.8,
+      "tags": ["挂耳染", "挑染", "潮色"],
+      "specialties": ["长", "细软", "卷发", "美式复古"],
+      "avatar": "barber_7.png",
+      "price_range": "¥268-888"
+    },
+    {
+      "id": 8,
+      "name": "强子",
+      "shop": "硬核Barbershop",
+      "location": "海淀区中关村",
+      "distance": "2.2km",
+      "rating": 4.7,
+      "tags": ["黑人烫", "脏辫", "嘻哈风"],
+      "specialties": ["椭", "自然卷", "高层次", "美式复古"],
+      "avatar": "barber_8.png",
+      "price_range": "¥200-600"
+    },
+    {
+      "id": 9,
+      "name": "Amy",
+      "shop": "优雅造型屋",
+      "location": "西城区西单",
+      "distance": "1.5km",
+      "rating": 4.9,
+      "tags": ["法式慵懒卷", "锁骨发", "八字刘海"],
+      "specialties": ["方", "细软", "公主切", "法式慵懒"],
+      "avatar": "barber_9.png",
+      "price_range": "¥188-498"
+    },
+    {
+      "id": 10,
+      "name": "小龙",
+      "shop": "速剪便利店",
+      "location": "朝阳区大望路",
+      "distance": "0.5km",
+      "rating": 4.4,
+      "tags": ["快剪", "商务短发", "日常造型"],
+      "specialties": ["长", "粗硬", "学生头", "韩式温柔"],
+      "avatar": "barber_10.png",
+      "price_range": "¥25-58"
+    }
+  ]
+}

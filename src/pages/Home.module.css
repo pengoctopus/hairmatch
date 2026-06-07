@@ -1,0 +1,124 @@
+.homePage {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background: url('/assets/background.png') center/cover no-repeat;
+}
+
+.bgOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255,182,193,0.6) 0%, rgba(135,206,235,0.5) 50%, rgba(240,230,140,0.5) 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hanging {
+  position: absolute;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.scissors {
+  top: 80px;
+  right: 10%;
+  width: 80px;
+  filter: drop-shadow(4px 4px 0 var(--pop-black));
+}
+
+.comb {
+  top: 120px;
+  left: 8%;
+  width: 60px;
+  filter: drop-shadow(3px 3px 0 var(--pop-black));
+}
+
+.star {
+  bottom: 15%;
+  right: 15%;
+  width: 50px;
+  filter: drop-shadow(3px 3px 0 var(--pop-black));
+}
+
+.content {
+  position: relative;
+  z-index: 3;
+  text-align: center;
+  max-width: 800px;
+  padding: 40px 24px;
+}
+
+.mainTitle {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 80px;
+  color: var(--pop-white);
+  text-shadow:
+    -4px -4px 0 var(--pop-black),
+    4px -4px 0 var(--pop-black),
+    -4px 4px 0 var(--pop-black),
+    4px 4px 0 var(--pop-black),
+    8px 8px 0 var(--pop-pink);
+  transform: rotate(-3deg);
+  margin-bottom: 24px;
+  letter-spacing: 4px;
+}
+
+.subtitle {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--pop-black);
+  background: var(--pop-white);
+  display: inline-block;
+  padding: 12px 24px;
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  margin-bottom: 20px;
+  max-width: 90%;
+}
+
+.description {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--pop-black);
+  margin-bottom: 40px;
+  text-shadow: 1px 1px 0 var(--pop-white);
+}
+
+.btnGroup {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.ctaBtn {
+  font-size: 20px;
+  padding: 18px 40px;
+}
+
+.ctaBtn:hover {
+  box-shadow: var(--shadow-hard-yellow);
+}
+
+.ctaBtn:nth-child(2):hover {
+  box-shadow: var(--shadow-hard-cyan);
+}
+
+@media (max-width: 768px) {
+  .mainTitle {
+    font-size: 48px;
+  }
+  .subtitle {
+    font-size: 16px;
+  }
+  .description {
+    font-size: 15px;
+  }
+  .scissors, .comb, .star {
+    display: none;
+  }
+}

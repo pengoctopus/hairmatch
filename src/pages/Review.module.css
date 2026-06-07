@@ -1,0 +1,362 @@
+.reviewPage {
+  background: linear-gradient(180deg, #FFF8F0 0%, #F0F8FF 100%);
+  padding: 100px 24px 60px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 32px;
+  text-shadow: 3px 3px 0 var(--pop-pink);
+}
+
+/* 隐私说明 */
+.privacyNotice {
+  display: flex;
+  gap: 20px;
+  background: var(--pop-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  padding: 20px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.privacyImg {
+  width: 120px;
+  height: 120px;
+  border: 3px solid var(--pop-black);
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.privacyImg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.privacyText {
+  flex: 1;
+  min-width: 200px;
+}
+
+.privacyText h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.privacyText p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #444;
+}
+
+/* 表单 */
+.formBox {
+  background: var(--pop-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  padding: 24px;
+}
+
+.formGroup {
+  margin-bottom: 20px;
+}
+
+.formGroup label {
+  display: block;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.select, .textInput {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid var(--pop-black);
+  font-size: 15px;
+  font-family: inherit;
+  background: var(--pop-white);
+  outline: none;
+}
+
+.select:focus, .textInput:focus {
+  box-shadow: 4px 4px 0 var(--pop-pink);
+}
+
+.uploadBox {
+  border: 3px dashed var(--pop-black);
+  padding: 16px;
+  text-align: center;
+  background: #f8f8f8;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.uploadBox:hover {
+  background: var(--pop-yellow);
+}
+
+.uploadLabel {
+  cursor: pointer;
+  font-size: 14px;
+  color: #555;
+}
+
+.typeSelect {
+  display: flex;
+  gap: 12px;
+}
+
+.typeBtn {
+  flex: 1;
+  padding: 12px;
+  border: 3px solid var(--pop-black);
+  background: var(--pop-white);
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--transition-bounce);
+}
+
+.typeBtn:hover {
+  transform: scale(1.03);
+}
+
+.activeType {
+  background: var(--pop-pink);
+  color: var(--pop-white);
+  box-shadow: 4px 4px 0 var(--pop-black);
+}
+
+/* 照片上传 */
+.photoUploads {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.photoBox {
+  flex: 1;
+  min-width: 140px;
+}
+
+.photoBox label {
+  font-size: 13px;
+  margin-bottom: 6px;
+}
+
+.photoLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120px;
+  border: 3px dashed var(--pop-black);
+  background: #f8f8f8;
+  cursor: pointer;
+  font-size: 14px;
+  color: #666;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.photoLabel:hover {
+  background: var(--pop-yellow);
+}
+
+.previewPhoto {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.maskingNotice {
+  width: 100%;
+  padding: 10px;
+  background: var(--pop-cyan);
+  color: var(--pop-white);
+  font-weight: 700;
+  text-align: center;
+  border: 3px solid var(--pop-black);
+  animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.7; }
+}
+
+/* 评分 */
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.ratingRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ratingLabel {
+  width: 60px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.starGroup {
+  display: flex;
+  gap: 4px;
+}
+
+.starBtn {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s;
+  padding: 0 2px;
+}
+
+.starBtn:hover {
+  transform: scale(1.3);
+}
+
+/* 标签 */
+.tagCloud {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.tagPill {
+  padding: 6px 14px;
+  border: 3px solid var(--pop-black);
+  background: var(--pop-white);
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s var(--transition-bounce);
+  border-radius: 20px;
+}
+
+.tagPill:hover {
+  transform: scale(1.08);
+}
+
+.activePill {
+  background: var(--pop-yellow);
+  box-shadow: 3px 3px 0 var(--pop-black);
+}
+
+/* 文本框 */
+.textarea {
+  width: 100%;
+  padding: 12px;
+  border: 3px solid var(--pop-black);
+  font-size: 15px;
+  font-family: inherit;
+  resize: vertical;
+  outline: none;
+}
+
+.textarea:focus {
+  box-shadow: 4px 4px 0 var(--pop-pink);
+}
+
+/* 提交 */
+.submitBtn {
+  width: 100%;
+  font-size: 18px;
+  padding: 16px;
+  margin-top: 8px;
+}
+
+.submitBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: var(--shadow-hard);
+}
+
+/* 提交后 */
+.submittedBox {
+  background: var(--pop-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  padding: 40px;
+  text-align: center;
+}
+
+.submittedBox h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.submittedBox p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* 弹窗 */
+.modalOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 3000;
+  background: rgba(0,0,0,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.thanksCard {
+  background: var(--pop-white);
+  border: var(--border-thick);
+  box-shadow: 10px 10px 0 var(--pop-black);
+  padding: 40px 60px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.explodeStars {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.thanksCard h3 {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.thanksCard p {
+  color: #555;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 28px;
+  }
+  .privacyNotice {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .photoUploads {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,138 @@
+.privacyPage {
+  background: linear-gradient(180deg, #FFF0F5 0%, #E6F3FF 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 24px 60px;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 48px;
+  max-width: 1200px;
+  width: 100%;
+  flex-wrap: wrap;
+  margin-bottom: 48px;
+}
+
+.comicSection {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  flex: 1;
+  min-width: 300px;
+  justify-content: center;
+}
+
+.comicPanel {
+  background: var(--pop-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  padding: 16px;
+  text-align: center;
+  position: relative;
+  max-width: 220px;
+}
+
+.comicImg {
+  width: 100%;
+  max-width: 180px;
+  height: auto;
+  display: block;
+  margin: 0 auto 12px;
+}
+
+.comicCaption {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--pop-black);
+}
+
+.localTag {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 4px 10px;
+  background: var(--pop-yellow);
+  border: 2px solid var(--pop-black);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.arrowBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrowImg {
+  width: 60px;
+  height: auto;
+  filter: drop-shadow(2px 2px 0 var(--pop-black));
+}
+
+.textSection {
+  flex: 1;
+  min-width: 300px;
+  max-width: 480px;
+}
+
+.title {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 42px;
+  color: var(--pop-black);
+  text-shadow: 3px 3px 0 var(--pop-pink);
+  margin-bottom: 20px;
+}
+
+.desc {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--pop-black);
+  background: var(--pop-cyan);
+  display: inline-block;
+  padding: 12px 20px;
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  margin-bottom: 20px;
+}
+
+.detail {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #333;
+  background: var(--pop-white);
+  padding: 20px;
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+}
+
+.btnGroup {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.actionBtn {
+  font-size: 18px;
+  padding: 16px 36px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .comicSection {
+    flex-direction: column;
+  }
+  .arrowImg {
+    transform: rotate(90deg);
+  }
+  .title {
+    font-size: 32px;
+  }
+}

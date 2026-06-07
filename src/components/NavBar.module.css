@@ -1,0 +1,124 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background: var(--pop-pink);
+  border-bottom: var(--border-thick);
+  box-shadow: 0 4px 0 rgba(0,0,0,0.15);
+}
+
+.navInner {
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 24px;
+  height: 70px;
+}
+
+.logo {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 28px;
+  color: var(--pop-white);
+  text-shadow: 3px 3px 0 var(--pop-black);
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+
+.navLinks {
+  display: flex;
+  list-style: none;
+  gap: 8px;
+}
+
+.navLink {
+  display: block;
+  padding: 8px 16px;
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--pop-white);
+  text-decoration: none;
+  border: 3px solid transparent;
+  transition: all 0.3s var(--transition-bounce);
+}
+
+.navLink:hover {
+  background: var(--pop-white);
+  color: var(--pop-black);
+  border-color: var(--pop-black);
+  box-shadow: 3px 3px 0 var(--pop-black);
+}
+
+.navLink.active {
+  background: var(--pop-yellow);
+  color: var(--pop-black);
+  border-color: var(--pop-black);
+  box-shadow: 3px 3px 0 var(--pop-black);
+}
+
+.navRight {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.icon {
+  font-size: 20px;
+  cursor: pointer;
+  filter: drop-shadow(2px 2px 0 var(--pop-black));
+}
+
+.moreMenu {
+  position: relative;
+}
+
+.moreBtn {
+  padding: 6px 12px;
+  font-size: 14px;
+  font-weight: 700;
+  background: var(--pop-white);
+  border: var(--border-thick);
+  box-shadow: 3px 3px 0 var(--pop-black);
+  cursor: pointer;
+  transition: all 0.3s var(--transition-bounce);
+}
+
+.moreBtn:hover {
+  transform: scale(1.05);
+  box-shadow: 4px 4px 0 var(--pop-black);
+}
+
+.dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  right: 0;
+  background: var(--pop-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  min-width: 140px;
+  padding: 8px 0;
+}
+
+.dropdownItem {
+  padding: 10px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdownItem:hover {
+  background: var(--pop-yellow);
+}
+
+@media (max-width: 768px) {
+  .navLinks {
+    display: none;
+  }
+  .navInner {
+    padding: 0 16px;
+  }
+}

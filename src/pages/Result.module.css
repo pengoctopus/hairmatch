@@ -1,0 +1,399 @@
+.resultPage {
+  background: linear-gradient(180deg, #FFF0F5 0%, #F5F5F5 100%);
+  padding: 100px 24px 60px;
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.pageTitle {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 32px;
+  text-shadow: 3px 3px 0 var(--pop-pink);
+}
+
+.resultLayout {
+  display: grid;
+  grid-template-columns: 380px 1fr;
+  gap: 32px;
+}
+
+.sectionTitle {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 3px solid var(--pop-black);
+}
+
+/* 左侧理发师卡片 */
+.barberList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.barberCard {
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  padding: 16px;
+  cursor: pointer;
+  transition: all 0.4s var(--transition-bounce);
+}
+
+.barberCard:hover {
+  transform: scale(1.03) rotate(-1deg);
+  box-shadow: var(--shadow-hard-hover);
+}
+
+.activeCard {
+  border-color: var(--pop-pink);
+  box-shadow: 6px 6px 0 var(--pop-pink);
+}
+
+.barberHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-bottom: 12px;
+}
+
+.barberAvatar {
+  width: 60px;
+  height: 60px;
+  border: 3px solid var(--pop-black);
+  object-fit: cover;
+}
+
+.barberInfo {
+  flex: 1;
+}
+
+.barberName {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.barberShop {
+  font-size: 13px;
+  color: #555;
+  margin-top: 2px;
+}
+
+.barberMeta {
+  font-size: 12px;
+  color: #777;
+  margin-top: 2px;
+}
+
+.matchBadge {
+  background: var(--pop-yellow);
+  border: 2px solid var(--pop-black);
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: 2px 2px 0 var(--pop-black);
+}
+
+.barberTags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+}
+
+.tag {
+  background: var(--pop-white);
+  border: 2px solid var(--pop-black);
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.barberRating {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ratingScore {
+  font-size: 22px;
+  font-weight: 900;
+  color: var(--pop-pink);
+}
+
+.ratingStars {
+  font-size: 14px;
+}
+
+.expandBtn {
+  width: 100%;
+  margin-top: 8px;
+}
+
+/* 右侧面板 */
+.rightPanel {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.previewSection, .reviewSection {
+  background: var(--pop-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  padding: 20px;
+}
+
+.aiPreviewBox {
+  text-align: center;
+}
+
+.previewImgs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+
+.previewImgWrap {
+  text-align: center;
+}
+
+.previewImg {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border: var(--border-thick);
+  box-shadow: 4px 4px 0 var(--pop-black);
+}
+
+.previewLabel {
+  display: block;
+  margin-top: 6px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.previewPlus {
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.aiTag {
+  display: inline-block;
+  background: var(--pop-cyan);
+  color: var(--pop-white);
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid var(--pop-black);
+}
+
+.placeholderBox {
+  background: #f5f5f5;
+  border: 3px dashed #ccc;
+  padding: 40px;
+  text-align: center;
+  color: #888;
+}
+
+/* 评论墙 */
+.reviewList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  max-height: 600px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+.reviewCard {
+  border: 3px solid var(--pop-black);
+  padding: 16px;
+  transition: all 0.3s var(--transition-bounce);
+}
+
+.reviewCard:hover {
+  transform: scale(1.01);
+  box-shadow: 4px 4px 0 var(--pop-black);
+}
+
+.reviewHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.reviewProfile {
+  font-size: 12px;
+  font-weight: 600;
+  color: #555;
+}
+
+.reviewDate {
+  font-size: 12px;
+  color: #888;
+}
+
+.reviewPhoto {
+  position: relative;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+.photoImg {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border: 3px solid var(--pop-black);
+}
+
+/* 修改5：面部已遮挡提示移到评论卡片右上角 */
+.faceMaskBadge {
+  display: inline-block;
+  background: #666;
+  color: var(--pop-white);
+  padding: 2px 8px;
+  font-size: 11px;
+  font-weight: 600;
+  margin-left: 8px;
+  border-radius: 2px;
+}
+
+/* 匹配度标签 */
+.matchLabelRow {
+  margin-top: 8px;
+}
+
+.matchLabel {
+  display: inline-block;
+  padding: 3px 10px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid var(--pop-black);
+}
+
+.highMatch {
+  background: var(--pop-pink);
+  color: var(--pop-white);
+}
+
+.goodMatch {
+  background: var(--pop-yellow);
+  color: var(--pop-black);
+}
+
+.lowMatch {
+  background: #ccc;
+  color: #333;
+}
+
+/* 空状态 */
+.emptyState {
+  background: var(--pop-white);
+  border: 3px dashed var(--pop-black);
+  padding: 20px;
+  text-align: center;
+  font-weight: 600;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* 与你脸型相似标签 */
+.similarFaceTag {
+  display: inline-block;
+  background: var(--pop-yellow);
+  color: var(--pop-black);
+  padding: 3px 10px;
+  font-size: 11px;
+  font-weight: 700;
+  border: 2px solid var(--pop-black);
+  margin-bottom: 8px;
+  box-shadow: 2px 2px 0 var(--pop-black);
+}
+
+.reviewBarberName {
+  font-size: 14px;
+  color: var(--pop-pink);
+  margin-left: 4px;
+}
+
+.noReview {
+  text-align: center;
+  padding: 30px;
+  color: #888;
+  font-weight: 600;
+}
+
+.faceMask {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  right: 10%;
+  height: 30%;
+  background: rgba(0,0,0,0.7);
+  color: var(--pop-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+.noPhotoTag {
+  display: inline-block;
+  background: #ddd;
+  border: 2px solid var(--pop-black);
+  padding: 4px 10px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.reviewRatings {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.reviewComment {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.reviewTags {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.reviewTag {
+  background: var(--pop-white);
+  border: 2px solid var(--pop-black);
+  padding: 2px 8px;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .resultLayout {
+    grid-template-columns: 1fr;
+  }
+  .pageTitle {
+    font-size: 28px;
+  }
+}

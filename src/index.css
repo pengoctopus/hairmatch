@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;700;900&display=swap');
+
+:root {
+  --pop-pink: #FF1493;
+  --pop-cyan: #00CED1;
+  --pop-yellow: #FFD700;
+  --pop-black: #000000;
+  --pop-white: #FFFFFF;
+  --pop-orange: #FF6B35;
+  --pop-purple: #9B59B6;
+  --pop-green: #2ECC71;
+
+  --shadow-hard: 6px 6px 0px var(--pop-black);
+  --shadow-hard-hover: 10px 10px 0px var(--pop-pink);
+  --shadow-hard-yellow: 10px 10px 0px var(--pop-yellow);
+  --shadow-hard-cyan: 10px 10px 0px var(--pop-cyan);
+
+  --transition-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --border-thick: 4px solid var(--pop-black);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100vh;
+  font-family: 'Noto Sans SC', sans-serif;
+  background: var(--pop-white);
+  color: var(--pop-black);
+  overflow-x: hidden;
+}
+
+/* 波普风格按钮基础 */
+.pop-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px 32px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--pop-black);
+  background: var(--pop-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  cursor: pointer;
+  transition: all 0.4s var(--transition-bounce);
+  text-decoration: none;
+  border-radius: 0;
+}
+
+.pop-btn:hover {
+  transform: scale(1.05) rotate(-2deg);
+  box-shadow: var(--shadow-hard-hover);
+}
+
+.pop-btn:active {
+  transform: scale(0.98) rotate(0deg);
+  box-shadow: 2px 2px 0px var(--pop-black);
+}
+
+.pop-btn.pink {
+  background: var(--pop-pink);
+  color: var(--pop-white);
+}
+
+.pop-btn.yellow {
+  background: var(--pop-yellow);
+}
+
+.pop-btn.cyan {
+  background: var(--pop-cyan);
+  color: var(--pop-white);
+}
+
+/* 波普卡片 */
+.pop-card {
+  background: var(--pop-white);
+  border: var(--border-thick);
+  box-shadow: var(--shadow-hard);
+  transition: all 0.4s var(--transition-bounce);
+}
+
+.pop-card:hover {
+  transform: scale(1.03) rotate(-1deg);
+  box-shadow: var(--shadow-hard-hover);
+}
+
+/* 网点背景 */
+.dot-pattern {
+  background-image: radial-gradient(circle, var(--pop-black) 1px, transparent 1px);
+  background-size: 12px 12px;
+}
+
+/* 渐变背景 */
+.gradient-bg {
+  background: linear-gradient(135deg, #FFB6C1 0%, #87CEEB 50%, #F0E68C 100%);
+}
+
+/* 页面容器 */
+.page-container {
+  width: 100%;
+  min-height: 100vh;
+  padding-top: 80px;
+}
+
+/* 响应式 */
+@media (max-width: 768px) {
+  .pop-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+  }
+}
