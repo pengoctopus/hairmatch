@@ -1,16 +1,44 @@
-# React + Vite
+# HairMatch - 找到懂你的发型师
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+一个帮助用户找到合适发型师的美发匹配平台。
 
-Currently, two official plugins are available:
+## 项目截图
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### 1. 首页
+![首页截图](./readme%20photo/1.png)
 
-## React Compiler
+### 2. 功能介绍
+![功能介绍](./readme%20photo/2.png)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### 3. 发型匹配
+![发型匹配](./readme%20photo/3.png)
 
-## Expanding the ESLint configuration
+### 4. 匹配结果
+![匹配结果](./readme%20photo/4.png)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 5. 评价页面
+![评价页面](./readme%20photo/5.png)
+
+---
+
+## 技术栈
+
+- **React 19** + **Vite**
+- **React Router** 单页应用路由
+- **GSAP** 动画效果
+- 部署在 **Netlify**
+
+## 本地开发
+
+```bash
+npm install
+npm run dev
+```
+
+## 构建
+
+```bash
+npm run build
+```
+
+构建产物输出到 `dist` 目录。
